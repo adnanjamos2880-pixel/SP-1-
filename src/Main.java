@@ -16,7 +16,7 @@ public class Main {
 
 
         String[] inventory = {"Sword", "Shield", "Healing Herb"};
-             // Nu laver vi et string array
+        // Nu laver vi et string array
 
         System.out.println("=== CHARACTER SHEET ===");
         System.out.println("Name: " + navn);
@@ -33,7 +33,9 @@ public class Main {
         System.out.println("- " + inventory[2]);
 
 
-
+        for (int i = 0; i < inventory.length; i++) {
+            System.out.println("- " + inventory[i]);
+        }
     }
-
 }
+

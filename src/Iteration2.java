@@ -1,6 +1,7 @@
+
+
 public class Iteration2 {
     // Den her del handler om Control Structures (if statements og loops)
-
 
      public static void main(String[] args) {
 
@@ -34,11 +35,30 @@ public class Iteration2 {
 
          // Opgave 2.5 -
 
-         System.out.println("Inventory (" + inventory.length + " items):");
+
          for (int i = 0; i < inventory.length; i++) {
              System.out.println("- " + inventory[i]);
 
+             System.out.println("Inventory (" + inventory.length + " items):");
 
+
+
+             // Opgave 2.6 - Simulér et angreb: lav en variabel for indkommende skade (fx 30)
+             //Træk skaden fra karakterens health
+             //Tjek om karakteren stadig er i live efter angrebet (brug samme isAlive-logik som i status checks)
+             //Print resultatet
+             //
+
+             int incomingDamage = 30;  // varibel incoming damage
+             healthPoints = healthPoints - incomingDamage;
+
+             if (healthPoints <= 0) {
+                 isAlive = false;
+             }
+
+             System.out.println(navn + " took " + incomingDamage + " damage!");
+             System.out.println("Health remaining: " + healthPoints);
+             System.out.println("Alive: " + isAlive);
 
 
 
